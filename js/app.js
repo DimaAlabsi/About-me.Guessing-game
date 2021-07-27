@@ -6,14 +6,22 @@ alert(' Welcome to my website ..'+ username );
 
 
 
-let myage = prompt('Do you think my age less than 25 yaers ? yes or no ').toLowerCase();
-switch(myage) {
-case 'yes':
-//   console.log('yes,the user gussed');
+let myAge = prompt('Do you think my age less than 25 yaers ? yes/y or no/n ').toLowerCase();
+let counter = 0;
 
+while( myAge !== 'yes' &&  myAge !== 'y' &&  myAge !== 'no' &&  myAge !== 'n') {
+   myAge = prompt('Please enter yes or no');}
+
+
+
+
+switch(myAge) {
+case 'yes' , 'y' :
+//   console.log('yes,the user gussed');
   alert('Bravo, you guess it ..'+ username + ' . I am 24 years old.');
+  counter++;
   break;
-case 'no':
+case 'no' ,'n':
   //    console.log('no,the user don't guess');
   alert('oh, I am 24 years old');
 
@@ -21,17 +29,22 @@ case 'no':
   break;
 
 
+}
+ 
+
+let lifePlace = prompt('Do you think I live in Jordan ? yes or no ').toLowerCase();
+while( lifePlace !== 'yes' &&  lifePlace !== 'y' &&  lifePlace !== 'no' &&  lifePlace !== 'n') {
+   lifePlace = prompt('Please enter yes or no');
 
 }
-
-let lifeplace = prompt('Do you think I live in Jordan ? yes or no ').toLowerCase();
-switch(lifeplace) {
-case 'yes':
+switch(lifePlace) {
+case 'yes', 'y':
 //   console.log('yes,the user gussed');
 
   alert('Bravo, you guess it.. '+ username + ' . I live in Amman.');
+   counter++;
   break;
-case 'no':
+case 'no', 'n':
   //    console.log('no,the user don't guess');
   alert ( 'oh, I live in Amman_Jordan');
 
@@ -40,21 +53,27 @@ case 'no':
   break;
 
 
-
 }
 
 
 
-let myinterest = prompt('Do you think I am intrested in Programming and software development ').toLowerCase();
-switch(myinterest) {
-case 'yes':
+
+let myInterest = prompt('Do you think I am intrested in Programming and software development ').toLowerCase();
+while( myInterest !== 'yes' &&  myInterest !== 'y' && myInterest !== 'no' &&  lifePlace !== 'n') {
+  myInterest = prompt('Please enter yes or no');
+
+}
+switch(myInterest) {
+case 'yes', 'y':
 //   console.log('yes,the user gussed');
 
   alert('Bravo, you guess it..'+ username + ' . I am so intersted in this field.');
+  
+  counter++;
   break;
-case 'no':
+case 'no','n':
   //    console.log('no,the user don't guess');
- alert('oh, whu not it is a very interesting field');
+ alert('oh, why not it is a very interesting field');
 
 
 
@@ -64,14 +83,20 @@ case 'no':
 
 }
 
-let aboutmovies = prompt('Do you think I like watching movies ').toLowerCase();
-switch(aboutmovies) {
-case 'yes':
+let aboutMovies = prompt('Do you think I like watching movies ').toLowerCase();
+while( aboutMovies !== 'yes' && aboutMovies !== 'y' && aboutMovies !== 'no' &&  lifePlace !== 'n') {
+ aboutMovies = prompt('Please enter yes or no');
+
+}
+switch(aboutMovies) {
+case 'yes','y':
 //   console.log('yes,the user gussed');
 
   alert('Bravo, you guess it ..'+ username + ' . I like watching movies very much');
+  
+  counter++;
   break;
-case 'no':
+case 'no','n':
   //    console.log('no,the user don't guess');
   alert('oh, it is the most thing I love to do after listening to others experiences');
 
@@ -83,23 +108,35 @@ case 'no':
 }
 
 
-let favmovie = prompt('Do you think I love watching horror movies? ').toLowerCase();
-switch(favmovie) {
-case 'yes':
+let favMovie = prompt('Do you think I love watching horror movies? ').toLowerCase();
+while( favMovie !== 'yes' && favMovie !== 'y' && favMovie !== 'no' &&  lifePlace !== 'n') {
+ favMovie = prompt('Please enter yes or no');
+}
+switch(favMovie) {
+case 'yes','y':
 //   console.log('no.the user donot guess');
 
   alert('Oh, no it is impossible to watch this kind of movies');
+  
   break;
-case 'no':
+case 'no', 'n':
   //    console.log('user guessed');
   alert('yes dear, I do not never prefer this kind of movies .');
-
+  counter++;
 
   break;
 
 
 
 }
+
+
+
+
+alert(  username  +"  your score is  "+ counter)
+
+
+
 
 alert('Hope you have a great time at my website ^_^ '+ username );
 
