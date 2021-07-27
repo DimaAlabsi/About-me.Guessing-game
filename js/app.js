@@ -138,19 +138,18 @@ let guessBirthady = Number(prompt(username + ' Can you guess my birthday month?'
 
 // console.log (guessBirthady)
 for (let i = 0; i < 4; i++) {
-  if (guessBirthady === 8) { alert('oh you guess my birthday month');
-  counter++;
-  break; }
+  if (guessBirthady === 8) { alert('oh you guess my birthday month'); counter++;
+    break; }
  
   
-  guessBirthady = (Numberprompt(username + ' Can you guess my birthday month?'));
+  guessBirthady = Number(prompt(username + ' Can you guess my birthday month?'));
 
 // console.log(guessBirthady)
   if ( guessBirthady < 8) { alert('try again ,it is too low'); }
   guessBirthady = Number(prompt(username + ' Can you guess my birthday month?'));
 
   // console.log(guessBirthady)
-  if ( guessBirthady > 8) { alert('try again ,it is too high')};
+  if ( guessBirthady > 8) { alert('try again ,it is too high'); }
   
 
 }
@@ -175,24 +174,23 @@ let favColor = ['pink', 'purple','white','blue','black'];
 let guessColor = prompt(username + ' Can you guess my favourite color?');
 // console.log (guessColor)
 for (let x = 0; x < 6; x++) {
-   if (guessColor=== favColor[2]) { alert('oh you guess my favourite color');
- counter++;
-   break; }
- 
-  
- 
+  if (guessColor=== favColor[2]) { alert('oh you guess my favourite color');
+    counter++;
+    break; }
+
 
   guessColor = prompt(username + ' Can you guess my favourite color?');
-  // console.log (guessColor)
+  while (guessColor !== favColor[2]) {alert('try again , it is not my favourite one');}
+}
+// console.log (guessColor)
 
 //   if ( guessColor === favColor [3] ) { alert('try again ,it is not my favourite one'); }
   
-while (guessColor !== favColor[2]) {alert('try again , it is not my favourite one')}
+
  // console.log (guessColor)
-
-}
-
+alert ('My favourite color is white color')
 alert('your score is ' + counter)
 
 alert(' Hope you have a great time at my website ^_^ ' + username);
+
 
