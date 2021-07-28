@@ -1,5 +1,5 @@
-p {border: 8px solid #000 }
+p {border: 4px solid #000 }
 
 li  { background-color: bisque;}
-
+ol { float: left;}
 ul{float: right;}
