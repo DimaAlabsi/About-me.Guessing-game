@@ -17,12 +17,14 @@ while (myAge !== 'yes' && myAge !== 'y' && myAge !== 'no' && myAge !== 'n') {
 
 
 switch (myAge) {
-case 'yes', 'y':
+case 'yes':
+case 'y':
   //   console.log('yes,the user gussed');
   alert('Bravo, you guess it ..' + username + ' . I am 24 years old.');
   counter++;
   break;
-case 'no', 'n':
+case 'no' :
+case 'n' :
   //    console.log('no,the user don't guess');
   alert('oh, I am 24 years old');
 
@@ -39,13 +41,15 @@ while (lifePlace !== 'yes' && lifePlace !== 'y' && lifePlace !== 'no' && lifePla
 
 }
 switch (lifePlace) {
-case 'yes', 'y':
+case 'yes':
+case 'y':
   //   console.log('yes,the user gussed');
 
   alert('Bravo, you guess it.. ' + username + ' . I live in Amman.');
   counter++;
   break;
-case 'no', 'n':
+  case 'no' :
+    case 'n' :
   //    console.log('no,the user don't guess');
   alert('oh, I live in Amman_Jordan');
 
@@ -65,14 +69,16 @@ while (myInterest !== 'yes' && myInterest !== 'y' && myInterest !== 'no' && myIn
 
 }
 switch (myInterest) {
-case 'yes', 'y':
+ case 'yes':
+case 'y':
   //   console.log('yes,the user gussed');
 
   alert('Bravo, you guess it..' + username + ' . I am so intersted in this field.');
 
   counter++;
   break;
-case 'no', 'n':
+  case 'no' :
+    case 'n' :
   //    console.log('no,the user don't guess');
   alert('oh, why not it is a very interesting field');
 
@@ -90,14 +96,16 @@ while (aboutMovies !== 'yes' && aboutMovies !== 'y' && aboutMovies !== 'no' && a
 
 }
 switch (aboutMovies) {
-case 'yes', 'y':
+  case 'yes':
+    case 'y':
   //   console.log('yes,the user gussed');
 
   alert('Bravo, you guess it ..' + username + ' . I like watching movies very much');
 
   counter++;
   break;
-case 'no', 'n':
+  case 'no' :
+    case 'n' :
   //    console.log('no,the user don't guess');
   alert('oh, it is the most thing I love to do after listening to others experiences');
   break;
@@ -112,13 +120,15 @@ while (favMovie !== 'yes' && favMovie !== 'y' && favMovie !== 'no' && favMovie !
   favMovie = prompt('Please enter yes or no');
 }
 switch (favMovie) {
-case 'yes', 'y':
+  case 'yes':
+    case 'y':
   //   console.log('no.the user donot guess');
 
   alert('Oh, no it is impossible to watch this kind of movies');
 
   break;
-case 'no', 'n':
+  case 'no' :
+    case 'n' :
   //    console.log('user guessed');
   alert('yes dear, I do not never prefer this kind of movies .');
   counter++;
@@ -130,24 +140,31 @@ case 'no', 'n':
 }
 
 
-
+let attempts = 4;
+let answer = 8;
 
 
 
 // console.log (guessBirthady)
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < attempts; i++) {
   let guessBirthady = Number(prompt(username + ' Can you guess my birthday month?'));
-  if (guessBirthady === 8) { alert('oh you guess my birthday month'); counter++;
+  // console.log (guessBirthady
+  if (guessBirthady === answer) { 
+    alert('oh you guess my birthday month');
+    counter++;
     break; }
-  guessBirthady = Number(prompt(username + ' Can you guess my birthday month?'));
+  // guessBirthady = Number(prompt(username + ' Can you guess my birthday month?'));
 
   //console.log(guessBirthady)
-  if ( guessBirthady < 8) { alert('try again ,it is too low'); }
-  guessBirthady = Number(prompt(username + ' Can you guess my birthday month?'));
+   else if ( guessBirthady < answer ) {
+     
+    alert('try again ,it is too low'); }
+  // guessBirthady = Number(prompt(username + ' Can you guess my birthday month?'));
 
   // console.log(guessBirthady)
-  if ( guessBirthady > 8) { alert('try again ,it is too high'); }
-
+  // if ( guessBirthady > 8)
+  else { alert('try again ,it is too high'); }
+  alert ('my birthady month is 8');
 }
 
 //  while( guessBirthady !== 8 && aboutMovies > 8) {
@@ -162,30 +179,35 @@ for (let i = 0; i < 4; i++) {
 
 
 
-alert ('my birthady month is 8');
 
 
 
-let favColor = ['pink', 'purple','white','blue','black'];
+
+let favColor = ['pink', 'purple','white', 'green'];
 let guessColor = prompt(username + ' Can you guess my favourite color?');
 // console.log (guessColor)
-for (let x = 0; x < 6; x++) {
-  if (guessColor=== favColor[2]) { alert('oh you guess my favourite color');
+ outerloop: for (let x = 0; x < 6; x++) {
+   for(let i= 0; i< favColor.length; i++){
+
+  if (guessColor=== favColor[i]) { alert('oh you guess my favourite color');
     counter++;
-    break; }
+    break outerloop; }
+    else { alert('try again ,it is not my favourite one');
+    guessColor = prompt(username + ' Can you guess my favourite color?');}
+   }
+
+  }
 
 
-  guessColor = prompt(username + ' Can you guess my favourite color?');
-  while (guessColor !== favColor[2]) {alert('try again , it is not my favourite one');}
-}
+  // guessColor = prompt(username + ' Can you guess my favourite color?');
+//   while (guessColor !== favColor[2]) {alert('try again , it is not my favourite one');}
+// }
 // console.log (guessColor)
 
 //   if ( guessColor === favColor [3] ) { alert('try again ,it is not my favourite one'); }
 
 
 // console.log (guessColor)
-alert ('My favourite color is white color');
+alert ('My favourite colors are: white, green, pink, purple colors');
 alert('your score is ' + counter);
-
-alert(' Hope you have a great time at my website ^_^ ' + username);
-
+alert(' Hope you have a great time at my website ^_^ ');
