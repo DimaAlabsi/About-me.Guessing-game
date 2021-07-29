@@ -184,27 +184,27 @@ guessBirthady();
 
 
 
-function guessColor(){
+// function guessColor(){
 
-  let favColor = ['pink', 'purple','white', 'green'];
-  let guessColor = prompt(username + ' Can you guess my favourite color?');
-  // console.log (guessColor)
-  outerloop: for (let x = 0; x < 6; x++) {
-    for(let i= 0; i< favColor.length; i++){
+//   let favColor = ['pink', 'purple','white', 'green'];
+//   let guessColor = prompt(username + ' Can you guess my favourite color?');
+//   // console.log (guessColor)
+//   outerloop: for (let x = 0; x < 6; x++) {
+//     for(let i= 0; i< favColor.length; i++){
 
-      if (guessColor=== favColor[i]) { alert('oh you guess my favourite color');
-        counter++;
+//       if (guessColor=== favColor[i]) { alert('oh you guess my favourite color');
+//         counter++;
         
-        break outerloop;
-      }
-     else { alert('try again ,it is not my favourite one');
-    guessColor= prompt(username+ 'can you guess favourite color? ');
-          }
-    if (x === 5){alert ('sorry. y0u do not guess it');}
+//         break outerloop;
+//       }
+//      else { alert('try again ,it is not my favourite one');
+//     guessColor= prompt(username+ 'can you guess favourite color? ');
+//           }
+//     if (x === 5){alert ('sorry. y0u do not guess it');}
     
-  }
-}
-guessColor();
+//   }
+// }
+// guessColor();
 
 // guessColor = prompt(username + ' Can you guess my favourite color?');
 //   while (guessColor !== favColor[2]) {alert('try again , it is not my favourite one');}
