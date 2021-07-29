@@ -199,12 +199,12 @@ guessBirthady();
 
 function guessColor() {
   let favColor = ['pink', 'purple', 'white', 'green'];
-  let guessColor = prompt(username + ' Can you guess my favourite color?');
+  let guessColor = prompt(username + ' Can you guess my favourite color?').toLowerCase;
   // console.log (guessColor)
   outerloop: for (let x = 0; x < 6; x++) {
     for (let i = 0; i < favColor.length; i++) {
 
-      if (guessColor === favColor[i]) {
+      if (guessColor === favColor[i].toLowerCase) {
         alert('oh you guess my favourite color');
         counter++;
 

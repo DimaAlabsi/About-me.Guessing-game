@@ -1,5 +1,62 @@
-p {border: 4px solid #000 }
+p {border: 5px solid #000 }
 
-li  { background-color: bisque;}
+.welcome{
+
+height: 120;
+width: 150;
+position: absolute;
+background-color: sandybrown;
+
+}
 ol { float: left;}
 ul{float: right;}
+
+
+
+body {
+    height: 4000px
+  }
+  
+  #section {
+   
+    
+    margin-top: 700px;
+  }
+  article {
+    width: 300px;
+    height: 300px;
+    background-color:beige
+    margin : 15px;
+  }
+  
+  
+  
+  /* .second {
+    position: fixed;
+    top: 4;
+    left: 700px;
+    background-color:pink;
+    f
+  } */
+  
+  /* article:nth-child(1) {
+    background-color: aqua;
+  } */
+  
+  /* article:nth-child(3) {
+    background-color:burlywood;
+  }
+   */
+  .fixed {
+    position: fixed;
+  
+    right: 20px;
+    top: 20px;
+    width: 300px;
+    height:300px;
+    background-color:plum;
+  }
+  
+  
+ 
+ 
