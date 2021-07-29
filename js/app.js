@@ -198,7 +198,7 @@ function guessColor(){
         break outerloop;
       }
      else { alert('try again ,it is not my favourite one');
-    guessColor= prompt(username+ 'can you guess favourite color?');
+    guessColor= prompt(username+ 'can you guess favourite color? ');
           }
     if (x === 5){alert ('sorry. y0u do not guess it');}
     
@@ -220,4 +220,4 @@ alert ('My favourite colors are: white, green, pink, purple colors');
 
 
 alert('your score is ' + counter);
-alert(' Hope you have a great time at my website ^_^ ');
+alert(' Hope you have a great time at my website ^_^ ')
