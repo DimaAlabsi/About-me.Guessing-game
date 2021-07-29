@@ -215,6 +215,6 @@ guessColor();
 
 
 // console.log (guessColor)
-alert ('My favourite colors are: white, green, pink, purple colors');
-alert('your score is ' + counter);
-alert(' Hope you have a great time at my website ^_^ ');
+// alert ('My favourite colors are: white, green, pink, purple colors');
+// alert('your score is ' + counter);
+// alert(' Hope you have a great time at my website ^_^ ');
