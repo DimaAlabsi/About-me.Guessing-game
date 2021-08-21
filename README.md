@@ -3,7 +3,7 @@
 
  + ## Describe my  project with the new features I am adding :
 
-#### *My webpage that quizzes the user on fun facts gives the user some basic information about who I am and where Icame from also gives the user informayion about my education, something love to do and etc..*
+#### *My webpage that quizzes the user on fun facts gives the user some basic information about who I am and where I came from also gives the user informayion about my education, something love to do and etc..*
 
 
 
